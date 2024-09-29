@@ -9,6 +9,7 @@ body
 #image-container {
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -167,38 +168,63 @@ footer {
   height:100px;
 }
 
+.dropbtn {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e7920a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 1;
+}
+
 /*contact
 */
 .contact{
     
   text-align: center;
-  color:#000000
+  color:#e9a209
 }
-.wrapper{
-  
-  position:absolute;
-  top:450px;
+.wrapper {
+  margin-top: 200px;
+  position: relative;
   width: 400px;
   height: 440px;
-  background-color:aliceblue;
-  border:6px solid rgb(225, 146, 9);
+  /*background-color: aliceblue;*/
+  border: 6px solid rgb(225, 146, 9);
   border-radius: 20px;
   backdrop-filter: blur(60px);
-  box-shadow: 0 0 30px rgba(0, 0 ,0 1);
-  display:flex;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-left:auto;
-  box-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9100, 0 0 70px #ff9100, 0 0 80px #ff9100, 0 0 100px #ff9100, 0 0 150px #ff9100;
-
-  
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9100, 
+              0 0 70px #ff9100, 0 0 80px #ff9100, 0 0 100px #ff9100, 0 0 150px #ff9100;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(60px);
 }
-
-.wrapper1{
-  justify-content: center;
-  align-items: center;
-}
-
 
 .wrapper1 {
   display: flex;
@@ -222,21 +248,15 @@ footer {
   .contact h2 {
     font-size: 18px;
   }
-  html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
+
+    
+
 }
 
 @media (max-width: 480px) {
   .contact h2 {
     font-size: 16px;
   }
-  html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
+
 }
 

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/styles.css?v=1.0">
       <script src="script.js" defer></script>
       <title>Boulangerie V.A.V</title>
+      <link rel="icon" type="image/svg+xml" href="assets/sprites/boulangerie.svg">
     </head>
     <body>
       <main>
@@ -20,7 +21,16 @@
             <div class="navbar-links">
               <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="gateauSurCommande.php">Gateaux sur commande</a></li>
+                <div class="dropdown">
+                 
+                  <li><a href="#">Gateaux sur commande</a></li>
+                  <div class="dropdown-content">
+                    <li><a href="gateauChiffre.php">Gateaux chiffre</a></li>
+                    <li><a href="gateauBapteme.php">Gateaux bapteme</a></li>
+                    <li><a href="gateauAnniversaire.php">Gateaux Anniversaire</a></li>
+                    <li><a href="autres.php">Autres Gateaux</a></li>
+                  </div>
+              </div>
                 <li><a href="ImpressionAlimentaire.php">Impression alimentaire</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 
@@ -35,14 +45,14 @@
           <div class="footer-content">
             <div class="footer-logo"></div>
             <ul class="footer-links">
-              <li><a href="index.php">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="contact.php">Contact</a></li>
             </ul>
           </div>
           <div class="footer-bottom">
-            <p>&copy; 2023 Your Website. All Rights Reserved.</p>
+            <p>&copy; 2024 Boulangerie V.A.V All Rights Reserved.</p>
           </div>
         </footer>
     </body>
